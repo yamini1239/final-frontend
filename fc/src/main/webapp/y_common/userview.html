@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top headroom">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				
+			</div>
+			
+				<ul class="nav navbar-nav">
+					<li><a class="w3-text-white" href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+					<li class="dropdown"><a class="w3-text-white" href="#" class="dropdown-toggle"
+						data-toggle="dropdown"><span class="glyphicon glyphicon-edit"></span>Blogs<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#/viewblogs">View Blog</a></li>
+							<li><a href="#/addblog">Post Blogs</a></li>
+							<li><a href="#/myblog">My Blogs</a></li>
+						</ul></li>
+					<li class="dropdown"><a class="w3-text-white" href="#" class="dropdown-toggle"
+						data-toggle="dropdown"><span class="glyphicon glyphicon-comment">Forums</span><b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#/viewforums">View Forums</a></li>
+							<li><a href="#/addforum">Post Forum</a></li>
+							<li><a href="#/myforum">My Forum</a></li>
+						</ul>	
+					</li>
+					<li class="dropdown"><a class="w3-text-white" href="#" class="dropdown-toggle"
+						data-toggle="dropdown">Jobs<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#/viewjobs">View Jobs</a></li>
+							<li><a href="#/viewappliedjobs">Applied Jobs</a></li>
+						</ul>
+					</li>	
+					<li><a class="w3-text-white" href="#/listmyfriends">Friends</a></li>
+					<li><a class="w3-text-white" href="#/chat"><span class="glyphicon glyphicon-envelope"></span>Chat</a></li>
+					<li><a class="w3-text-white" ng-hide="currentUser.useremail==undefined"
+						href="#/home" ng-click="ctrl.logoutuser()"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+					<li style="font-weight: bold; color: white;"
+						ng-show="currentUser.useremail!==undefined"><br />
+					<br />{{currentUser.useremail}} : {{currentUser.currentrole}}
+			       </li>
+	  			   </div>
+	              </nav>
+	
+	
+</body>
+<!--div class="container-bottom">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading-fd">
+                <h3 class="panel-title-fd">Comments</h3>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div-->
+	<style>
+  .container-fluid{
+    background-image: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/10/simple-wallpaper-26.jpg);
+    font-family:Lucida Sans Unicode;
+  }
+
+.Home{
+  background-color:unset;
+  }
+  /*.
+  container-bottom{
+  background-color:green;
+  }
+  */
+
+
+
+</style>
+</html>
