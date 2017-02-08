@@ -1,5 +1,5 @@
 # final-frontend
-TeamCollaboration
+Collaboration
 
 Angular routing SPA
 
